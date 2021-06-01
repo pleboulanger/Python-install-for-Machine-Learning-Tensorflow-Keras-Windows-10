@@ -1,40 +1,38 @@
 # Python-install-for-Machine-Learning-Tensorflow-Keras-Windows-10
 Python install for Machine Learning (Tensorflow Keras) on Windows 10
-# Python install for Machine Learning Tensorflow Keras Windows 7 (in development)
-Python install for Machine Learning (Tensorflow Keras) on Windows 7 (CPU)
 
 ###### What you will need :
 
-- Windows 7
+- Windows 10
 - Administrator rights
 
-Hello! This post will aim at installing Python for Machine Learning with Keras on Windows 7.
+Hello! This post will aim at installing Python for Machine Learning with Keras on Windows 10.
 At the end of this tutorial you will have installed the following:
-- Python 3.5 (64-bit)
+- Python 3.7 (64-bit)
 - Pip
 - Tensorflow
 - Keras
 - Jupyter notebook
 
-First, we need to install Python 3.5.2.
-Download the Windows x86-64 executable installer at https://www.python.org/ftp/python/3.5.2/python-3.5.2-amd64.exe.
+First, we need to install Python 3.7.9.
+Download the Windows x86-64 executable installer at https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe.
 
-Install the program.
+Install the program. Make sure you check the "Add Python to PATH" dialog box.
 
 Open a Windows Terminal from Start >> All Programs >> Accessories >> Command Prompt and right click and choose "Run as administrator"
 
 Check Python version by typing 
 >python --version
 
-It should read "Python 3.5.2".
-
-Locate the python.exe file by typing python.exe in Start >> "Search programms and files" and right click on python and choose Properties. Copy the Location field.
-In the command prompt, type cd\ and paste the path to python.exe
+It should read "Python 3.7.9".
 
 Now install and upgrade pip (a Python package manager) by entering the following command
 >python.exe -m pip install --upgrade pip
 
-Once it is done, install Tensorflow by typing
+Once it is done, install Tensorflow. You will first need to install Microsoft Visual C++ Redistributable from the following link:
+https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0
+
+Then, install TensorFlow in the command line by typing
 >python.exe -m pip install --upgrade tensorflow
 
 # At this point, check that you are using Python 64-bit if Tensorflow install fail!!!
@@ -97,16 +95,13 @@ Congratulation, you just trained your first Deep Learning model!!
 ###### Sources :
 
 Python
-https://www.python.org/downloads/release/python-352/
+https://www.python.org/downloads/release/python-379/
 
 Pip
 https://pypi.org/project/pip/
 
 Tensorflow
 https://www.tensorflow.org/install
-
-For GPU:
-https://medium.com/@kelfun5354/step-by-step-guide-to-install-tensorflow-cpu-gpu-for-windows-7-b472327984cd
 
 Keras:
 https://keras.io/#installation
